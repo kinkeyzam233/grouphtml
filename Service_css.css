@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 2px solid #e0b188;
+  margin-bottom: 20px;
+}
+
+.edu-menu {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+.edu-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: blue;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: red; /* Change background color on hover */
+  color: #ffffff; /* Ensure text remains white */
+  border-radius: 20px;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+.services, .classes {
+  margin: 40px 0;
+}
+
+.services h2, .classes h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #006994;
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-size: 16px;
+  color: #555;
+}
+
+.classes h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.class-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: 2px solid #d1a679;
+  font-size: 16px;
+}
+
+.class-item h3 {
+  color: #006994;
+  font-size: 18px;
+  margin: 0;
+}
+
+.class-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.class-details span {
+  color: #555;
+  font-size: 14px;
+}
+
+.book-now, .view-course {
+  background-color: #d1a679;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.book-now:hover, .view-course:hover {
+  background-color: #b9875d;
+}
+
+.class-item:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Footer styling */
+.footer {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  background-color: #b56e2a;
+  margin: 20px auto;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  color: #006a8e;
+  margin-top: 20px;
+}
+
+.contact-info div {
+  text-align: center;
+}
+
+.contact-info div h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.contact-info div p {
+  font-size: 1em;
+  color: #333;
+}
+
+.social-media {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-media a {
+  color: #333;
+  font-size: 1.5em;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #4a90e2;
+}
+
+.course-card h1 {
+  font-size: 24px;
+  color: #2c6e91;
+  margin-bottom: 15px;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.course-details {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.course-details button {
+  padding: 8px 16px;
+  border: 1px solid #2c6e91;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #2c6e91;
+  cursor: pointer;
+}
+
+.availability {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.bottom-line {
+  border-top: 1px solid #d3a96b;
+  margin-top: 20px;
+}
+
+.view-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d3a96b;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+  background-color: #b9875d;
+}
+
+/* Responsive Design: Small Screens */
+@media screen and (max-width: 768px) {
+  .edu-menu {
+    display: block; /* Show hamburger icon */
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.show {
+    display: flex; /* Show navigation links when toggled */
+  }
+}

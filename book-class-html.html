@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Mentor Hub- Book A Class</title>
+    <link rel="stylesheet" href="assets/css/book-class-css.css">
+    <script>
+        function showUnavailableAlert() {
+            alert("This class is not available at the moment.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/Jim/logo.jpeg" alt="Edu Mentor Hub Logo">
+                <h1>Edu Mentor Hub</h1>
+                <p>Tutoring Services</p>
+            </div>
+
+            <div class="edu-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="#"class="active">Book a Class</a></li>
+                    <li><a href="service.html">Our Services</a></li>
+                    <li><a href="onlineP.html">Online Practice</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+    <main>
+        <h1>Book Your Class</h1>
+        <div class="subjects-container">
+            <div class="subject-card">
+                <img src="assets/Jim/math.webp" alt="Mathematics Class">
+                <h2>Mathematics</h2>
+                <p>1 hr</p>
+                <p>BTN 500</p>
+                <button onclick="showUnavailableAlert()">Book Now</button>
+            </div>
+            <div class="subject-card">
+                <img src="assets/Jim/Frontend.jfif" alt="Front End Design Class">
+                <h2>Front End Design</h2>
+                <p>1 hr</p>
+                <p>BTN 500</p>
+                <button onclick="showUnavailableAlert()">Book Now</button>
+            </div>
+            <div class="subject-card">
+                <img src="assets/Jim/english.avif" alt="English Class">
+                <h2>English</h2>
+                <p>1 hr</p>
+                <p>BTN 450</p>
+                <button onclick="showUnavailableAlert()">Book Now</button>
+            </div>
+            <div class="subject-card">
+                <img src="assets/Jim/Data.jfif" alt="Data Analytics and Visualization Class">
+                <h2>Data Analytics and Visualization</h2>
+                <p>1 hr</p>
+                <p>BTN 450</p>
+                <button onclick="showUnavailableAlert()">Book Now</button>
+            </div>
+            <div class="subject-card">
+                <img src="assets/Jim/entre.jfif" alt="Entrepreneurship Class">
+                <h2>Entrepreneurship</h2>
+                <p>1 hr</p>
+                <p>BTN 450</p>
+                <button onclick="showUnavailableAlert()">Book Now</button>
+            </div>
+            <div class="subject-card">
+                <img src="assets/Jim/modern.jfif" alt="Modern Database Class">
+                <h2>Modern Database</h2>
+                <p>1 hr</p>
+                <p>BTN 550</p>
+                <button onclick="showUnavailableAlert()">Book Now</button>
+            </div>
+        </div>
+    </main>
+
+       <!-- Footer Section -->
+       <div class="footer">
+        <div class="divider"></div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div>
+                <h3>Call</h3> 
+                <p>77773677</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p>07230051@gmail.com</p>
+            </div>
+            </div>
+            <div class="follow-info">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook"><img src="assets/Photos/FB.jfif" alt="facebook" width="20px"></a> <!-- Facebook icon -->
+                    <a href="#" aria-label="Twitter"><img src="assets/Photos/instagram.jpeg" alt="instagram"width="20px"></a> <!-- Twitter icon -->
+                    <a href="#" aria-label="YouTube"><img src="assets/Photos/twitter.png" alt="Twiter"width="20px"></a> <!-- YouTube icon -->
+                    <a href="#" aria-label="tiktok"><img src="assets/Photos/tiktok.png" alt="tiktok"width="20px"></a> <!-- tiktok icon -->
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+<script>function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+</script>
+</html>

@@ -1,0 +1,149 @@
+
+/* General Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #26bdd4;
+  color: #333;
+}
+
+/* Container Styling */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h1, h2, h3 {
+  color: #003f5c;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p, ul {
+  color: #333333;
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  background: #a34b1a;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #8a3e16;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact a {
+  color: #ce5413;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container.contact {
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ddd; /* Subtle border for structure */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  text-align: center; /* Center align content */
+  max-width: 600px;
+  margin: 20px auto; /* Center container horizontally and vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Styling for the paragraph */
+.container.contact p {
+  font-size: 1rem;
+  color: #555; /* Neutral text color */
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Styling for the contact link */
+.container.contact a {
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Highlighted blue for links */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.container.contact a:hover {
+  color: #0056b3; /* Darker shade for hover */
+}
+
+/* Styling for the "Enroll Now" button */
+.container.contact .button {
+  display: inline-block; /* Makes the button inline and block-like */
+  background-color: #4caf50; /* Green button for action */
+  color: white; /* White text for contrast */
+  padding: 10px 20px; /* Spacing for button */
+  border: none;
+  border-radius: 5px; /* Rounded edges */
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Pointer cursor for buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.container.contact .button:hover {
+  background-color: #45a049; /* Darker green for hover effect */
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container.contact {
+    padding: 15px;
+  }
+
+  .container.contact p {
+    font-size: 0.9rem;
+  }
+
+  .container.contact .button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

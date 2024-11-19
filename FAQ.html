@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Mentor Hub - FAQ</title>
+    <link rel="stylesheet" href="assets/css/faqstyle.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/Photos/Logo.jfif" alt="Edu Mentor Hub Logo">
+                <h1>Edu Mentor Hub</h1>
+                <p>Tutoring Services</p>
+            </div>
+
+            <div class="edu-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="book-class-html.html">Book a Class</a></li>
+                    <li><a href="service.html">Our Services</a></li>
+                    <li><a href="onlineP.html">Online Practice</a></li>
+                    <li><a href="#"class="active">FAQ</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h2>FAQ</h2>
+        <h3>Frequently asked questions</h3>
+        <div class="faq-content">
+            <div class="faq-tabs">
+                <button class="tab active" data-tab="general">General</button>
+                <button class="tab" data-tab="setup">Setting up FAQs</button>
+            </div>
+            <div id="general" class="tab-content active">
+                <div class="faq-item">
+                    <h4>How can I register?</h4>
+                    <p>Go to the Book a class page and fill up the form listed there.</p>
+                </div>
+            </div>
+            <div id="setup" class="tab-content">
+                <div class="faq-item expandable">
+                    <h4 class="expandable-header">How do I add a new question & answer?</h4>
+                    <div class="content" style="display: none;">
+                        <p>To add a new FAQ follow these steps: </p>
+                        <ol>
+                            <li> Manage FAQs from your site dashboard or in the Editor </li>
+                            <li> Add a new question & answer </li>
+                            <li> Assign your FAQ to a category </li>
+                            <li> Save and publish.                            </li>
+                        </ol>
+                        <p>You can always come back and edit your FAQs. </p>
+                    </div>
+                </div>
+                <div class="faq-item expandable">
+                    <h4 class="expandable-header">Can I insert an image, video, or GIF in my FAQ?</h4>
+                    <div class="content" style="display: none;">
+                        <p>Yes. To add media follow these steps: </p>
+                        <ul>
+                            <li> Manage FAQs from your site dashboard or in the Editor </li>
+                            <li> Create a new FAQ or edit an existing one </li>
+                            <li> From the answer text box click on the video, image or GIF icon </li>
+                            <li> Add media from your library and save.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item expandable">
+                    <h4 class="expandable-header">How do I edit or remove the 'Frequently Asked Questions' title?</h4>
+                    <div class="content" style="display: none;">
+                        <p>You can edit the title from the FAQ 'Settings' tab in the Editor.  
+                            To remove the title from your mobile app go to the 'Site & App' tab in your Owner's app and customize.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="divider"></div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div>
+                <h3>Call</h3> 
+                <p>77773677</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p>07230051@gmail.com</p>
+            </div>
+            </div>
+            <div class="follow-info">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook"><img src="assets/Photos/FB.jfif" alt="facebook" width="20px"></a> <!-- Facebook icon -->
+                    <a href="#" aria-label="instagram"><img src="assets/Photos/instagram.jpeg" alt="instagram"width="20px"></a> <!-- Twitter icon -->
+                    <a href="#" aria-label="Twitter"><img src="assets/Photos/twitter.png" alt="twitter"width="20px"></a> <!-- YouTube icon -->
+                    <a href="#" aria-label="tiktok"><img src="assets/Photos/tiktok.png" alt="tiktok"width="20px"></a> <!-- tiktok icon -->
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.tab-content');
+    
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    // Add active class to the clicked tab
+                    tab.classList.add('active');
+    
+                    // Hide all tab contents
+                    contents.forEach(content => content.classList.remove('active'));
+                    // Show the tab content that corresponds to the clicked tab
+                    document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+                });
+            });
+        });
+    </script>    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Tab switching functionality
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.tab-content');
+    
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    contents.forEach(content => content.classList.remove('active'));
+                    document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+                });
+            });
+    
+            // Expandable FAQ items functionality
+            const expandableHeaders = document.querySelectorAll('.expandable-header');
+    
+            expandableHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                });
+            });
+        });
+
+        
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+      }
+
+    </script>
+    
+</body>
+</html>
